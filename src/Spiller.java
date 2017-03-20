@@ -9,7 +9,7 @@ public class Spiller {
 	boolean aktiv = false;
 	String besked = "";
 	
-	/** kontruktør */
+	/** kontruktï¿½r */
 	public Spiller(String navn, double konto){
 		this.navn = navn;
 		this.konto = konto;
@@ -22,10 +22,10 @@ public class Spiller {
 		//JOptionPane.showMessageDialog(null, message);
 		}
 	
-	/** et ja/nej spørgsmål. Svarer brugeren ja returneres true, ellers false */ 
-	public boolean spørgsmål(String spørgsmål){
+	/** et ja/nej spï¿½rgsmï¿½l. Svarer brugeren ja returneres true, ellers false */ 
+	public boolean spÃ¸rgsmÃ¥l(String spÃ¸rgsmÃ¥l){
 		//try{Thread.sleep(300);} catch(InterruptedException e){e.printStackTrace();}
-		String spm = navn+": Vil du "+spørgsmål+"?";
+		String spm = navn+": Vil du "+spÃ¸rgsmÃ¥l+"?";
 		String svar = javax.swing.JOptionPane.showInputDialog(spm, "ja");
 		//System.out.println(spm+" "+svar);
 		if (svar!=null && svar.equals("ja")) return true;
@@ -35,7 +35,7 @@ public class Spiller {
 	/** modtagelse af penge */
 	public void transaktion(double kr){
 		konto = konto + kr;
-		//System.out.println(navn+"s konto lyder nu på "+konto+" kr");
+		//System.out.println(navn+"s konto lyder nu pï¿½ "+konto+" kr");
 	}
 	
 	/** sender penge til en anden spiller */
@@ -47,7 +47,7 @@ public class Spiller {
 	
 	public void tegn(Graphics g, int x, int y){
 		Polygon figur = new Polygon();
-		// Her skal der tegnes en bil ... snart
+		// TODO: Her skal der tegnes en bil ... snart
 		g.drawString(navn, x, y-15);
 	}
 	

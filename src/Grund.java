@@ -21,7 +21,7 @@ public class Grund extends Felt{
 	
 	public void landet(Spiller sp)
 	{
-		sp.besked("Du er landet på "+navn);
+		sp.besked("Du er landet pÃ¥ "+navn);
 		if (sp==ejer)
 		{
 			sp.besked("Det er din egen grund");
@@ -31,14 +31,14 @@ public class Grund extends Felt{
 		{
 			if (sp.konto>pris)
 			{
-				if(sp.spørgsmål("købe "+navn+" for "+pris))
+				if(sp.spÃ¸rgsmÃ¥l("kÃ¸be "+navn+" for "+pris))
 				{
 					sp.transaktion(-pris);
 					ejer=sp;
 					hus = false;
 				}
 			}
-			else sp.besked("Du har ikke penge nok til at købe "+navn);
+			else sp.besked("Du har ikke penge nok til at kÃ¸be "+navn);
 		}
 		else
 		{

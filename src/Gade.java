@@ -19,7 +19,7 @@ public class Gade extends Grund {
 		super.landet(sp);
 		if (hus) {
 			if (sp == ejer) {
-				if (antalHuse < 5 && sp.konto > huspris && sp.spørgsmål("købe hus for " + huspris)) {
+				if (antalHuse < 5 && sp.konto > huspris && sp.spÃ¸rgsmÃ¥l("kÃ¸be hus for " + huspris)) {
 					ejer.transaktion(huspris);
 					antalHuse = antalHuse + 1;
 				}
