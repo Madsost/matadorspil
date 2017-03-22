@@ -9,7 +9,7 @@ public class Spiller {
 	boolean aktiv = false;
 	String besked = "";
 	
-	/** kontrukt�r */
+	/** kontruktør */
 	public Spiller(String navn, double konto){
 		this.navn = navn;
 		this.konto = konto;
